@@ -22,33 +22,57 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
  ![image](https://user-images.githubusercontent.com/36288975/163552156-a13e5a56-c638-4110-97d9-8896907c8d25.png)
 
-#### Figure -01 HALF ADDER 
+#### HALF ADDER 
 
 
 ![image](https://user-images.githubusercontent.com/36288975/163552057-b3547877-6d07-45b4-b7e0-bcfebfad9e1d.png)
 
-#### Figure -02 FULL ADDER 
+#### FULL ADDER 
 
 ### Procedure
 
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+## Program:
+### Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+```py
+# Developed by: YUVARAJ.S
+# RegisterNumber:  22008589
+Half adder program:
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+module ex3 (a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = (a^b);
+assign carry = (a&b);
+endmodule
 
+Full adder program:
 
-### TRUTH TABLE 
+module fulladd (a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = (a^b^c);
+assign carry = ((a&b)|(a^b)&c);
+endmodule
 
+```
+## Output
+### RDL Diagram:
+### Half Order:
+![](./digi%2012.png)
+### Full Order:
+![](./digi%2022.png)
+### Truth Table:
+### Half Order:
+![](./13.png)
+### Full Order:
+![](./digi%2023.png)
+## Waveform:
+### Half Order:
+![](./digi1.png)
+### Full Order:
+![](./digi%2021.png)
 ### Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
