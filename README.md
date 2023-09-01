@@ -58,8 +58,7 @@ assign carry = ((a&b)|(a^b)&c);
 endmodule
 
 ```
-## Output
-### RDL Diagram:
+## RDL Diagram:
 ### Half Order:
 ![](./digi%2012.png)
 ### Full Order:
