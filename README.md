@@ -59,19 +59,19 @@ endmodule
 
 ```
 ## RDL Diagram:
-### Half Order:
+### Half Adder:
 ![](./digi%2012.png)
-### Full Order:
+### Full Adder:
 ![](./digi%2022.png)
 ### Truth Table:
-### Half Order:
+### Half Adder:
 ![](./13.png)
-### Full Order:
+### Full Adder:
 ![](./digi%2023.png)
 ## Waveform:
-### Half Order:
+### Half Adder:
 ![](./digi1.png)
-### Full Order:
+### Full Adder:
 ![](./digi%2021.png)
 ### Result:
 Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
